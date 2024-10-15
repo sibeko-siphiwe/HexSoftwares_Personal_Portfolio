@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease;
+}
+
+.Container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 700;
+}
+
+.Logo a {
+  font-size: 24px;
+}
+
+nav a {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  padding: 0 10px;
+  border-bottom: 1px solid #333;
+}
+
+input[type="checkbox"],   label{
+  display: none;
+}
+
+@media screen and (max-width: 700px){
+
+  header nav input:checked~.options {
+    display: block;
+  }
+
+  nav input[type="checkbox"] {
+    display: none;
+  }
+  
+  nav label {
+    display: block;
+  }
+  
+  nav .options {
+    padding: 0;
+    display: none; 
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right: 20px;
+    background-color: #00000030;
+    box-shadow: 0 0 10px gainsboro;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+
+  
+  nav .options a {
+    display: block;
+    padding: 25px 40px;
+  }
+  
+  nav .options a:hover {
+    padding: 20px 30px;
+    margin: 0;
+    background-color: #333;
+    color: white;
+  }
+ 
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .Profile_image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0px auto;
+}
+
+main .Profile_image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+main h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+main p {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+main .get-in-touch {
+  padding: 15px 30px;
+  margin: 20px 0;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+main .get-in-touch:hover {
+  background: #212121;
+  cursor: pointer;
+  scale: 1.2;
+}
+
+main button:hover {
+  background: #212121;
+  cursor: pointer;
+  scale: 1.2;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #333;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+fieldset {
+  padding: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+fieldset p {
+  margin: 20px 0;
+}
+
+fieldset img {
+  width: 50%;
+}
+
+.wrapper {
+  margin: 0px 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 100%;
+}
+
+section {
+  padding: 10px 20px;
+}
+
+section h2 {
+  margin: 10px 0;
+}
+
+Section ul,
+p {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.language {
+  width: 100%;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.Result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bar {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #999;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.C {
+  width: 90%;
+  height: 100%;
+  animation: C 2s;
+  background-color: lime;
+}
+
+.HTML {
+  width: 95%;
+  height: 100%;
+  animation: HTML 2s;
+  background-color: #15ff00;
+}
+
+.CSS {
+  width: 95%;
+  height: 100%;
+  animation: CSS 2s;
+  background-color: #15ff00;
+}
+
+.JavaScript {
+  width: 85%;
+  height: 100%;
+  animation: JavaScript 2s;
+  background-color: #7bff00;
+}
+
+.React {
+  width: 55%;
+  height: 100%;
+  animation: React 2s;
+  background-color: #ff9100;
+}
+
+@keyframes C {
+  0% {
+    background-color: red;
+    width: 0;
+  }
+  100% {
+    width: 90%;
+    background-color: lime;
+  }
+}
+
+@keyframes HTML {
+  0% {
+    width: 0%;
+    background-color: #ff0000;
+  }
+  100% {
+    width: 95%;
+    background-color: #15ff00;
+  }
+}
+
+@keyframes JavaScript {
+  0% {
+    width: 0%;
+    background-color: #ff0000;
+  }
+  100% {
+    width: 85%;
+    background-color: #7bff00;
+  }
+}
+
+@keyframes CSS {
+  0% {
+    width: 0%;
+    background-color: #ff0000;
+  }
+  100% {
+    width: 95%;
+    background-color: #15ff00;
+  }
+}
+
+@keyframes React {
+  0% {
+    width: 0%;
+    background-color: #ff0000;
+  }
+  100% {
+    width: 55%;
+    background-color: #ff9100;
+  }
+}
+
+li img {
+  width: 70px;
+  height: 70px;
+}
+
+.programming-languages {
+  text-align: center;
+}
+
+.programming-languages img {
+  height: 70px;
+  width: 70px;
+  margin: 0px 20px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
