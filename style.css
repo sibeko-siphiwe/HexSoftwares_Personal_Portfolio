@@ -121,6 +121,7 @@ main h2 {
 main p {
   letter-spacing: 1px;
   font-size: 18px;
+  text-align: center;
 }
 
 main .get-in-touch {
